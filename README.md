@@ -10,7 +10,7 @@
 ## 분류  
 
 ### Python
-- map 함수
+- [map 함수](https://github.com/dangils/TIL/blob/main/Python/map_function.md)
 <hr>  
 
 ### ML/DL 

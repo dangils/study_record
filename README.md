@@ -9,7 +9,7 @@
 
 ## 분류  
 
-### Python
+### [Python](https://github.com/dangils/TIL/tree/main/Python)
 - [map 함수](https://github.com/dangils/TIL/blob/main/Python/map_function.md)
 <hr>  
 

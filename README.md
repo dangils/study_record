@@ -13,7 +13,7 @@
 - [map 함수](https://github.com/dangils/TIL/blob/main/Python/map_function.md)
 <hr>  
 
-### ML/DL 
+### [ML/DL](https://github.com/dangils/TIL/tree/main/ML-DL) 
 
 - [ANN, DNN, CNN, RNN, GAN 이란?](https://github.com/dangils/TIL/blob/main/ML-DL/ANN%2C%20DNN%2C%20CNN%2C%20RNN%2C%20GAN%20%20%EC%9D%B4%EB%9E%80%3F.md)
 <hr>  

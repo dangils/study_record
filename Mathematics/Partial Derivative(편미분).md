@@ -1,4 +1,4 @@
-#### 편미분 개념 훑기
+### 편미분 개념 훑기
 
 ![image](https://user-images.githubusercontent.com/74512114/143518550-31473733-0ea8-4b27-822a-40c6d0b5d949.png)  
 

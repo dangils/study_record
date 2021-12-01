@@ -18,12 +18,16 @@
 
 
 ### CNN 합성곱 신경망(Convolution Neural Network : CNN)
+- Convolution(뜻 : 매우 복잡한, 수학적 의미 : 중첩 적분, 합성곱)
 - 기존의 방식은 데이터에서 지식을 추출해 학습이 이루어졌지만, 합성곱 신경망 CNN은 데이터의 특징을 추출하여 특징들의 패턴을 파악하는 구조
 - CNN 알고리즘은 Convolution과정과 Pooling과정을 통해 진행된다
 - Convolution Layer와 Pooling Layer를 복합적으로 구성하여 알고리즘을 만든다.
 <img src="https://user-images.githubusercontent.com/74512114/143189823-dfb014ee-d230-424b-8f5a-136a5f789c4a.png" width="700" height="200"/>
+→ Deep Neural Network에서 이미지나 영상과 같은 데이터를 처리할 때 발생하는 문제점들을 보완한 방법
 
-- 최근 가장 인기 있는 모델이며, 대표적인 예시로 알파고가 있다
+- 최근 가장 인기 있는 모델이며, 대표적인 예시로 알파고가 있다  
+> CNN 요약 :   
+CNN은 Convolution과 Pooling을 반복적으로 사용하면서 불변하는 특징을 찾고, 그 특징을 입력데이터로 Fully-connected 신경망에 보내 Classification을 수행합니다.
 
 ### RNN 순환 신경망(Recurrent Neural Network : RNN)
 - 순환 신경망 RNN 알고리즘은 반복적이고 순차적인 데이터(Sequential Data)학습에 특화된 인공신경망의 한 종류로써 내부의 순환구조가 들어있다는 특징을 가지고 있다
@@ -38,4 +42,4 @@
 - 서로 경쟁하며 가짜 이미지를 진짜 이미지와 최대한 비슷하게 만들어내는 네트워크를 말함
 
 
-✔ CNN,RNN,GAN은 블로그 포스팅을 통해 조금더 상세하게 알아보도록 하겠습니다~
+✔ CNN,RNN,GAN은 추가 업데이트 및 블로그 포스팅을 통해 조금더 상세하게 알아보도록 하겠습니다~

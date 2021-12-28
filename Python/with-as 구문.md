@@ -41,7 +41,9 @@ class Withest:
     print("메소드 호출 테스트")
    
    #with 구문 통해 객체가 종료될 때 자동으로 실행
-   def __exit__(self, exc_type, exc_val, exc_tb):
+   def __exit__(self, exc_type, exc_val, exc_tb): 
+    #exc_type, exc_val, exc_tb는 with 문을 빠져나오기 이전에 예외가 발생했을 때를 나타내는 정보
+    
     #종료 구문 설정하기(세션의 종료 등)
     print("with 통해 종료")
 # 객체 생성 및 with 구문 실행

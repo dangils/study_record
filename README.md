@@ -20,3 +20,5 @@
 ### [Mathematics](https://github.com/dangils/TIL/tree/main/Mathematics)
 <hr>  
 
+### [Software](https://github.com/dangils/TIL/tree/main/Software)
+

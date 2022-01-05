@@ -22,3 +22,7 @@
 
 ### [Software](https://github.com/dangils/TIL/tree/main/Software)
 
+<hr>
+
+### [Object Detection](https://github.com/dangils/TIL/tree/main/Object_Detection)
+

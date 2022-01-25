@@ -6,6 +6,51 @@ contour는 등고선이라는 뜻으로 같은 값을 가진 곳을 연결한 �
 2. cv2.drawContours() 함수는 원본 이미지를 직접 수정하기 때문에, 원본 이미지를 보존하려면 copy() 함수를 사용해야 한다.      
 3. openCV에서 Contours를 찾는 것은 검정색 배경에서 하얀색 대상을 찾는 것과 비슷하므로 찾고자 하는 대상은 흰색, 배경은 검은색으로 하는 것이 좋다.     
 
+<br>
+
+- findContours [소스 이미지 , 등고선 검색 모드(contour 제공 방식) , 등고선 근사 방법]
+- cv2.CHAIN_APPROX_SIMPLE : 수직선, 수평서느 대각선에 대해 끝점만 저장
+
+<br>
+
+#### findContours 의 2번째 인자(contour search 방법) 
+- cv2.RETR_LIST : 이미지에서 발견한 모든 Contour들을 계층에 상관하지 않고 나열, 계층 구조를 생성하지 않음
+- cv2.RETR_TREE : 모든 Contour들의 관계를 명확히 해서 리턴 (계층 구조를 생성)
+- cv2.RETR_EXTERNAL : 외곽 윤곽선만 검출하며, 계층 구조를 구성하지 않음
+- cv2.RETR_CCOMP : 모든 윤고가선을 검출하며, 계층 구조는 2단계로 구성
+
+
+#### 근사화 방법
+
+- cv2.CHAIN_APPROX_NONE : 윤곽점들의 모든 점을 반환합니다.
+- cv2.CHAIN_APPROX_SIMPLE : 윤곽점들 단순화 수평, 수직 및 대각선 요소를 압축하고 끝점만 남겨 둡니다.
+- cv2.CHAIN_APPROX_TC89_L1 : 프리먼 체인 코드에서의 윤곽선으로 적용합니다.
+- cv2.CHAIN_APPROX_TC89_KCOS : 프리먼 체인 코드에서의 윤곽선으로 적용합니다.
+
+ 
+
+각각인자 값에 따른 hierarchy(계층) 결과      
+
+
+cv2.RETR_LIST 인 경우      
+
+hierarchy =      
+[[[ 1 -1 -1 -1]              
+    [ 2  0 -1 -1]                 
+    [ 3  1 -1 -1]              
+    [ 4  2 -1 -1]        
+    [ 5  3 -1 -1]                     
+    [-1  4 -1 -1]]]               
+
+
+cv2.RETR_TREE 인 경우      
+hierarchy =       
+[[[ 5 -1  1 -1]        
+    [-1 -1  2  0]            
+    [-1 -1  3  1]            
+    [-1 -1  4  2]             
+    [-1 -1 -1  3]         
+    [-1  0 -1 -1]]]             
 
 
 ```python
